@@ -1,0 +1,9 @@
+[Unit]
+Description=My Script Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/bin/find_top_songs/main.py /find_top_songs/stream_logs /find_top_songs/top50_results_daily 
+
+[Install]
+WantedBy=multi-user.target

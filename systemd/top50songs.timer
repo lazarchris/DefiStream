@@ -1,0 +1,9 @@
+[Unit]
+Description=Find top songs Daily at 11:55 PM
+
+[Timer]
+OnCalendar=*-*-* 23:55:00
+Unit=top50songs.service
+
+[Install]
+WantedBy=timers.target
