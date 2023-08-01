@@ -42,5 +42,4 @@ if __name__ == "__main__":
         logs_folder = sys.argv[1]
         results_folder = sys.argv[2]
     
-    # Replace start with start_in_loop if you want to run the python script without the help of systemd
     start(logs_folder, results_folder)
