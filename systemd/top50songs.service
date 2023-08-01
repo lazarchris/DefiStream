@@ -1,5 +1,5 @@
 [Unit]
-Description=My Script Service
+Description=Top 50 songs
 After=network.target
 
 [Service]
