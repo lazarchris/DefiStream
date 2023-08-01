@@ -17,7 +17,7 @@ chmod +x init.sh
 - Execute following command to create stream logs folder, results folder, and to copy all systemd files and start a service to run the script
 
 ```sh
-sudo ./init
+sudo ./init.sh
 ```
 
 - Stream log files must be downloaded to "/find_top_songs/stream_logs"
