@@ -125,9 +125,9 @@ def write_to_file(result, resul_file_path):
     try:
         with open(resul_file_path, 'w') as file:
             for country, id_rank_dict in result.items():
-                line_parts = [country]
+                line_parts = [country]+'|'
                 line_parts.extend([f"{id}:n{rank}" for id, rank in id_rank_dict.items()])
-                line = "|".join(line_parts)
+                line = ",".join(line_parts)
                 file.write(line + '\n')
         print("Data successfully written to the file.")
     except IOError:
