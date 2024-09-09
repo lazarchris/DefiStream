@@ -70,7 +70,7 @@ def load_files(folder_path, last_number_of_days):
         return file_paths
     
     except Exception as e:
-        raise Exception(f"Error: Failed to load files from folder '{folder_path}'.")
+        raise Exception(f"Error: Failed to load files from folder '{folder_path}' due to {e}.")
 
     
 def count_top_song_by_country(files, top_total_number):
